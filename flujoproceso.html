@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Figura 2.2 - Flujo del Proceso</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #1976d2;
+    }
+    .diagram {
+      margin: 40px auto;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background: #fff;
+      width: 90%;
+    }
+    .diagram h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .box {
+      background: #1976d2;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-align: center;
+      min-width: 120px;
+    }
+    .arrow {
+      font-size: 20px;
+      color: #333;
+    }
+    .loop {
+      font-size: 14px;
+      color: #e91e63;
+      font-weight: bold;
+    }
+    .parallel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .time {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Figura 2.2 - Flujo del Proceso</h1>
+
+  <!-- Flujo lineal -->
+  <div class="diagram">
+    <h2>a) Flujo de proceso lineal</h2>
+    <div class="flow">
+      <div class="box">Comunicación</div><div class="arrow">→</div>
+      <div class="box">Planeación</div><div class="arrow">→</div>
+      <div class="box">Modelado</div><div class="arrow">→</div>
+      <div class="box">Construcción</div><div class="arrow">→</div>
+      <div class="box">Despliegue</div>
+    </div>
+  </div>
+
+  <!-- Flujo iterativo -->
+  <div class="diagram">
+    <h2>b) Flujo de proceso iterativo</h2>
+    <div class="flow">
+      <div class="box">Comunicación</div><div class="arrow">→</div>
+      <div class="box">Planeación</div><div class="arrow">→</div>
+      <div class="box">Modelado</div><div class="arrow">→</div>
+      <div class="box">Construcción</div><div class="arrow">→</div>
+      <div class="box">Despliegue</div>
+    </div>
+    <div class="loop">↺ Iteración: vuelve a Planeación, Modelado y Construcción</div>
+  </div>
+
+  <!-- Flujo evolutivo -->
+  <div class="diagram">
+    <h2>c) Flujo de proceso evolutivo</h2>
+    <div class="flow">
+      <div class="box">Comunicación</div><div class="arrow">→</div>
+      <div class="box">Planeación</div><div class="arrow">→</div>
+      <div class="box">Modelado</div><div class="arrow">→</div>
+      <div class="box">Construcción</div><div class="arrow">→</div>
+      <div class="box">Despliegue</div><div class="arrow">→</div>
+      <div class="box">Incremento obtenido</div>
+    </div>
+    <div class="loop">↺ Retroalimentación hacia Comunicación y Planeación</div>
+  </div>
+
+  <!-- Flujo paralelo -->
+  <div class="diagram">
+    <h2>d) Flujo de proceso paralelo</h2>
+    <div class="flow">
+      <div class="box">Comunicación</div><div class="arrow">→</div>
+      <div class="box">Planeación</div>
+      <div class="parallel">
+        <div class="arrow">||</div>
+        <div class="box">Modelado</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="box">Construcción</div><div class="arrow">→</div>
+      <div class="box">Despliegue</div>
+    </div>
+    <div class="time">→ Tiempo</div>
+  </div>
+</body>
+</html>

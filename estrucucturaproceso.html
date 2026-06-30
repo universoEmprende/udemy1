@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Figura 2.1 - Proceso del Software</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    h1 {
+      text-align: center;
+      color: #1976d2;
+    }
+    .process-structure {
+      position: relative;
+      background: #e0e0e0; /* caja gris */
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 40px 20px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    /* Caja sombrilla como fondo */
+    .umbrella {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      background: rgba(199, 175, 140, 0.25); /* naranja translúcido */
+      border-radius: 10px;
+      z-index: -1; /* detrás de las actividades */
+    }
+    .activity {
+      background: #1976d2;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      width: 90%;
+      text-align: center;
+    }
+    .actions {
+      margin-top: 10px;
+      background: #e3f2fd;
+      color: #333;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: left;
+    }
+    .taskset {
+      margin-top: 8px;
+      background: #c8e6c9;
+      padding: 8px;
+      border-radius: 6px;
+    }
+    .taskset ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Figura 2.1 - Proceso del Software</h1>
+    <div class="process-structure">
+      <!-- Fondo sombrilla detrás -->
+      <div class="umbrella"></div>
+
+      <!-- Actividades estructurales en vertical -->
+      <div class="activity">
+        Actividad estructural #1
+        <div class="actions">
+          Acción de ingeniería #1.1
+          <div class="taskset">
+            <ul>
+              <li>Tareas del trabajo</li>
+              <li>Puntos de aseguramiento de la calidad</li>
+              <li>Puntos de control</li>
+              <li>Puntos de revisión del proyecto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity">
+        Actividad estructural #2
+        <div class="actions">
+          Acción de ingeniería #2.1
+          <div class="taskset">
+            <ul>
+              <li>Tareas del trabajo</li>
+              <li>Puntos de aseguramiento de la calidad</li>
+              <li>Puntos de control</li>
+              <li>Puntos de revisión del proyecto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity">
+        Actividad estructural #n
+        <div class="actions">
+          Acción de ingeniería #n.1
+          <div class="taskset">
+            <ul>
+              <li>Tareas del trabajo</li>
+              <li>Puntos de aseguramiento de la calidad</li>
+              <li>Puntos de control</li>
+              <li>Puntos de revisión del proyecto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

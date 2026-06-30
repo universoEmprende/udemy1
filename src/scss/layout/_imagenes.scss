@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dos-columnas {
+    @include m.grid(1, 3rem);
+    @include m.telefono {
+        @include m.grid(2, 3rem);
+    }
+    
+}
+
+.tres-columnas {
+        img {
+            text-align: center;
+            width: 20rem;
+        }
+    @include m.grid(1, 3rem);
+    @include m.telefono {
+        @include m.grid(3, 3rem);
+    }
+}
